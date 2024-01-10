@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: backend/server.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: backend/server.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/*const express = require("express");
+const bodyParser = require("body-parser");
+const cors = require("cors");
+const mongoose = require("mongoose");
+
+const app = express();
+const PORT = process.env.PORT || 5000;
+
+// Middleware
+app.use(cors());
+//app.use(
+// cors({
+// origin: "http://localhost:3001", // Replace with your frontend URL
+// })
+//);
+
+app.use(bodyParser.json());
+
+// Connect to MongoDB
+mongoose.connect(
+  "mongodb+srv://fr7reza:QhA5nb05gDfhfqIa@cluster2.7xzgeej.mongodb.net/?retryWrites=true&amp;w=majority",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
+
+// Define a sample mongoose model and route
+const Note = mongoose.model("Note", { content: String });
+
+app.post("/api/notes", async (req, res) => {
+  const { content } = req.body;
+  const newNote = new Note({ content });
+  await newNote.save();
+  res.json({ message: "Note created successfully!" });
+});
+
+app.get("/api/notes", async (req, res) => {
+  const notes = await Note.find();
+  res.json({ notes });
+});
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).json({ message: "Internal Server Error: 500" });
+});
+
+// Start the server
+app.listen(PORT, () => {
+  console.log(`Server is running at http://localhost:${PORT}`);
+});
+*/
+
+const express = require("express");
+const bodyParser = require("body-parser");
+const cors = require("cors");
+const mongoose = require("mongoose");
+
+const app = express();
+const PORT = process.env.PORT || 5000;
+
+/**
+ * Middleware to enable Cross-Origin Resource Sharing (CORS).
+ * @function
+ */
+app.use(cors());
+
+/**
+ * Middleware to parse incoming JSON data in the request body.
+ * @function
+ * @middleware
+ */
+app.use(bodyParser.json());
+
+/**
+ * Connects to MongoDB using Mongoose.
+ * @function
+ * @async
+ * @param {string} uri - The connection URI for MongoDB.
+ * @param {Object} options - MongoDB connection options.
+ * @throws {Error} If the connection to MongoDB fails.
+ */
+mongoose.connect(
+  "mongodb+srv://fr7reza:QhA5nb05gDfhfqIa@cluster2.7xzgeej.mongodb.net/?retryWrites=true&amp;w=majority",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
+
+/**
+ * Mongoose model for representing a Note in the MongoDB collection.
+ * @typedef {Object} Note
+ * @property {string} content - The content of the note.
+ */
+
+/**
+ * Endpoint for creating a new note.
+ * @route {POST} /api/notes
+ * @param {Object} req - The Express request object.
+ * @param {Object} res - The Express response object.
+ * @param {Function} next - The next middleware function.
+ * @returns {Promise&lt;void>} Resolves when the note is created successfully.
+ * @throws {Error} If there is an issue creating the note.
+ */
+app.post("/api/notes", async (req, res, next) => {
+  try {
+    /**
+     * The content of the new note.
+     * @type {string}
+     */
+    const { content } = req.body;
+
+    /**
+     * Creates a new Note instance.
+     * @type {Note}
+     */
+    const newNote = new Note({ content });
+
+    /**
+     * Saves the new note to MongoDB.
+     */
+    await newNote.save();
+
+    /**
+     * Sends a JSON response indicating the success of the note creation.
+     */
+    res.json({ message: "Note created successfully!" });
+  } catch (error) {
+    /**
+     * Passes the error to the error-handling middleware.
+     */
+    next(error);
+  }
+});
+
+/**
+ * Endpoint for retrieving all notes.
+ * @route {GET} /api/notes
+ * @param {Object} req - The Express request object.
+ * @param {Object} res - The Express response object.
+ * @param {Function} next - The next middleware function.
+ * @returns {Promise&lt;void>} Resolves with a JSON response containing an array of notes.
+ * @throws {Error} If there is an issue retrieving the notes.
+ */
+app.get("/api/notes", async (req, res, next) => {
+  try {
+    /**
+     * Retrieves all notes from MongoDB.
+     * @type {Note[]}
+     */
+    const notes = await Note.find();
+
+    /**
+     * Sends a JSON response containing an array of notes.
+     */
+    res.json({ notes });
+  } catch (error) {
+    /**
+     * Passes the error to the error-handling middleware.
+     */
+    next(error);
+  }
+});
+
+/**
+ * Error handling middleware.
+ * @function
+ * @param {Error} err - The error object.
+ * @param {Object} req - The Express request object.
+ * @param {Object} res - The Express response object.
+ * @param {Function} next - The next middleware function.
+ */
+app.use((err, req, res, next) => {
+  /**
+   * Logs the error stack to the console.
+   */
+  console.error(err.stack);
+
+  /**
+   * Sends a JSON response indicating an internal server error.
+   */
+  res.status(500).json({ message: "Internal Server Error: 500" });
+});
+
+/**
+ * Starts the Express.js server.
+ * @function
+ * @param {number} port - The port on which the server will listen.
+ * @returns {void}
+ */
+app.listen(PORT, () => {
+  /**
+   * Logs a message indicating that the server is running.
+   */
+  console.log(`Server is running at http://localhost:${PORT}`);
+});
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#App">App</a></li><li><a href="global.html#handleAddNote">handleAddNote</a></li><li><a href="global.html#renderApp">renderApp</a></li><li><a href="global.html#useEffect">useEffect</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.2</a> on Mon Jan 01 2024 21:06:33 GMT+0530 (India Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
