@@ -12,3 +12,4 @@ This repository (Projects-Documentation) contains different branches where `docu
 - `frontend_docs_gh-pages` - frontent documentation in docs directory
 - `backend_docs_gh-pages` - backend documentation in docs directory
 - `gh-pages` - full-stack documentation in docs directory
+- `gh-page/docs` - full-stack documentation in docs directory
