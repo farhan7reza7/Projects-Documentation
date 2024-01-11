@@ -6,7 +6,8 @@ Check out:
 
 - [Full stack docs](https://farhan7reza7.github.io/Projects-Documentation/)
 
-this repository (Projects-Documentation) contains different branches where documentation for different parts of a full stack project are available.
+This repository (Projects-Documentation) contains different branches where `documentation` for different parts of a full stack project are available:
+
 Important Branches:
 
 - `main` - full-stack documentation in docs directory
