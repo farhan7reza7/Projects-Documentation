@@ -2,15 +2,11 @@
 
 Welcome to the documentations for my projects!
 
-Check out:
-
 ### Check out:
 
 - [Full stack docs](https://farhan7reza7.github.io/Projects-Documentation/)
 
 This repository (Projects-Documentation) contains different branches where `documentations` for different parts of a full stack project are available.
-
-Important Branches:
 
 ### Important Branches:
 
