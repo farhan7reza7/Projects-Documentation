@@ -18,3 +18,7 @@ Important Branches:
 - `frontend_docs_gh-pages` - frontent documentation in docs directory
 - `backend_docs_gh-pages` - backend documentation in docs directory
 - `gh-pages` - full-stack documentation in docs directory
+
+---
+
+_This page is to be updated with relevant contents_
