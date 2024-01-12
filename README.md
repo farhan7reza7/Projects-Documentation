@@ -21,4 +21,4 @@ Important Branches:
 
 ---
 
-_This page is to be updated with relevant contents_
+_This page is to be updated with the relevant contents._
