@@ -42,24 +42,24 @@
       }
     </style>
 
-    <style>
-    #cookieConsentBanner {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background-color: #333;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-    }
-    #cookieConsentBanner button {
-      background-color: #4CAF50;
-      color: #fff;
-      padding: 5px 10px;
-      border: none;
-      cursor: pointer;
-    }
+  <style>
+      #cookieConsentBanner {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+      #cookieConsentBanner button {
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+      }
   </style>
     
     <script
@@ -81,12 +81,20 @@
       function acceptCookies() {
         // Set cookies or execute other necessary actions
         // For now, let's just store a flag in localStorage indicating that cookies are accepted
-        localStorage.setItem('cookiesAccepted', 'true');
+        //localStorage.setItem('cookiesAccepted', 'true');
+        
+        // Set cookies for your domain or execute other necessary actions
+        var expirationDate = new Date();
+        expirationDate.setFullYear(expirationDate.getFullYear() + 1); // Set the expiration to one year from now
+        document.cookie = "cookiesAccepted=true; expires=" + expirationDate.toUTCString() + "; path=/";
+
         document.getElementById('cookieConsentBanner').style.display = 'none';
       }
   
       // Check if the user has previously accepted cookies
-      if (!localStorage.getItem('cookiesAccepted')) {
+      //if (!localStorage.getItem('cookiesAccepted')) {
+        // Check if the user has previously accepted cookies
+      if (!document.cookie.includes('cookiesAccepted=true')) {
         document.getElementById('cookieConsentBanner').style.display = 'block';
       }
     </script>
