@@ -3,8 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <title>Projects Documentation</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Projects-Documentation contains different branches where documentations for different parts of a full stack project are available"
+    />
+    <meta
+      name="keywords"
+      content="frontend_docs_gh-pages,backend_docs_gh-pages,docs, full-stack, documentations"
+    />
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
     <!--[if lt IE 9]>
@@ -34,6 +41,27 @@
         margin-left: 0;
       }
     </style>
+
+  <style>
+      #cookieConsentBanner {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+      #cookieConsentBanner button {
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+      }
+  </style>
+    
     <script
       src="https://platform.linkedin.com/badges/js/profile.js"
       async
@@ -43,6 +71,34 @@
   </head>
 
   <body>
+
+    <div id="cookieConsentBanner" style="display: none;">
+      <p>This website uses cookies to ensure you get the best experience. <button onclick="acceptCookies()">Accept</button></p>
+    </div>
+
+    <script>
+      // Function to handle the acceptance of cookies
+      function acceptCookies() {
+        // Set cookies or execute other necessary actions
+        // For now, let's just store a flag in localStorage indicating that cookies are accepted
+        //localStorage.setItem('cookiesAccepted', 'true');
+        
+        // Set cookies for your domain or execute other necessary actions
+        var expirationDate = new Date();
+        expirationDate.setFullYear(expirationDate.getFullYear() + 1); // Set the expiration to one year from now
+        document.cookie = "cookiesAccepted=true; expires=" + expirationDate.toUTCString() + "; path=/";
+
+        document.getElementById('cookieConsentBanner').style.display = 'none';
+      }
+  
+      // Check if the user has previously accepted cookies
+      //if (!localStorage.getItem('cookiesAccepted')) {
+        // Check if the user has previously accepted cookies
+      if (!document.cookie.includes('cookiesAccepted=true')) {
+        document.getElementById('cookieConsentBanner').style.display = 'block';
+      }
+    </script>
+    
     <div
       class="badge-base LI-profile-badge"
       data-locale="en_US"
