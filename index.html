@@ -33,6 +33,43 @@
         margin-left: 0;
       }
     </style>
+
+   <style>
+    #cookieConsentBanner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    #cookieConsentBanner button {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 5px 10px;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+
+    <script>
+    // Function to handle the acceptance of cookies
+    function acceptCookies() {
+      // Set cookies or execute other necessary actions
+      // For now, let's just store a flag in localStorage indicating that cookies are accepted
+      localStorage.setItem('cookiesAccepted', 'true');
+      document.getElementById('cookieConsentBanner').style.display = 'none';
+    }
+
+    // Check if the user has previously accepted cookies
+    if (!localStorage.getItem('cookiesAccepted')) {
+      document.getElementById('cookieConsentBanner').style.display = 'block';
+    }
+  </script>
+
+    
     <script
       src="https://platform.linkedin.com/badges/js/profile.js"
       async
@@ -42,6 +79,10 @@
   </head>
 
   <body>
+    <div id="cookieConsentBanner" style="display: none;">
+      <p>This website uses cookies to ensure you get the best experience. <button onclick="acceptCookies()">Accept</button></p>
+    </div>
+    
     <div
       class="badge-base LI-profile-badge"
       data-locale="en_US"
