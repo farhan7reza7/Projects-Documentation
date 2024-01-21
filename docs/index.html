@@ -48,7 +48,7 @@
         bottom: 0;
         left: 0;
         width: 100%;
-        background-color: #333;
+        background-color: #000;
         color: #fff;
         padding: 10px;
         text-align: center;
@@ -86,7 +86,7 @@
         // Set cookies for your domain or execute other necessary actions
         var expirationDate = new Date();
         expirationDate.setFullYear(expirationDate.getFullYear() + 1); // Set the expiration to one year from now
-        document.cookie = "cookiesAccepted=true; expires=" + expirationDate.toUTCString() + "; path=/" + "; SameSite=Lax" + "; Secure";
+        document.cookie = "cookiesAccepted=true; expires=" + expirationDate.toUTCString() + "; path=/" + "; SameSite=None" + "; Secure";
 
         document.getElementById('cookieConsentBanner').style.display = 'none';
       }
