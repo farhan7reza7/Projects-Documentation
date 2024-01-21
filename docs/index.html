@@ -53,11 +53,11 @@
         padding: 10px;
         text-align: center;
       }
-      #cookieConsentBanner p {
+      p#cookies {
         background-color: '#fff';
         color: '#111';
       }
-      #cookieConsentBanner button {
+      #cuButt {
         background-color: #4CAF50;
         color: #fff;
         display: block;
@@ -78,7 +78,7 @@
   <body>
 
     <div id="cookieConsentBanner" style="display: none;">
-      <p>This website uses cookies to ensure you get the best experience. <button onclick="acceptCookies()">Accept</button></p>
+      <p id="cookies">This website uses cookies to ensure you get the best experience. <button id="coButt" onclick="acceptCookies()">Accept</button></p>
     </div>
 
     <script>
@@ -92,7 +92,7 @@
         var expirationDate = new Date();
         expirationDate.setMonth(expirationDate.getMonth() + 3);
 
-        document.cookie = "cookiesAccepted=true; expires=" + expirationDate.toUTCString() + "; path=/" + "; SameSite=Lax" + "; Secure";
+        document.cookie = "cookiesAccepted=true; expires=" + expirationDate.toUTCString() + "; path=/" + "; SameSite=None" + "; Secure";
 
         document.getElementById('cookieConsentBanner').style.display = 'none';
       }
