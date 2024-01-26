@@ -1,6 +1,8 @@
 ### GitHub Stats:
 ![Farhan Reza's GitHub Stats](https://github-readme-stats.vercel.app/api?username=farhan7reza7&show_icons=true&theme=radical)
+
 ![Farhan Reza's GitHub Stats](https://github-readme-stats.vercel.app/api?username=farhan7reza7\&rank_icon=github)
+
 ![Farhan Reza's GitHub Stats](https://github-readme-stats.vercel.app/api?username=farhan7reza7\&rank_icon=percentile)
 
 
