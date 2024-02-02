@@ -13,11 +13,6 @@
 
 ![Farhan's GitHub stats](https://github-readme-stats.vercel.app/api/?username=farhan7reza7\&locale=es)
 
-![Customized Card](https://github-readme-stats.vercel.app/api/pin?username=farhan7reza7\&repo=Projects-Documentation\&title_color=fff\&icon_color=f9f9f9\&text_color=9f9f9f\&bg_color=151515)
-
-
-<!--![Gist Card](https://github-readme-stats.vercel.app/api/gist?id=bbfce31e0217a3689c8d961a356cb10d&theme=calm)
--->
 
 
 
@@ -27,21 +22,29 @@
 	<img alt="Contributions Profile" src="https://github-readme-activity-graph.vercel.app/graph?username=farhan7reza7&custom_title=Farhan%20Reza%27s%20Contribution%20Graph&hide_border=true&theme=react-dark&bg_color=272b30&color=ffffff" />
 </div>
 
+
+![Customized Card](https://github-readme-stats.vercel.app/api/pin?username=farhan7reza7\&repo=Projects-Documentation\&title_color=fff\&icon_color=f9f9f9\&text_color=9f9f9f\&bg_color=151515)
+
+
+<!--![Gist Card](https://github-readme-stats.vercel.app/api/gist?id=bbfce31e0217a3689c8d961a356cb10d&theme=calm)
+-->
+
+
 ### Top Technologies:
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=farhan7reza7&layout=compact)](https://github.com/farhan7reza7/github-readme-stats)
 
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=farhan7reza7)
 
-![Farhan's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=farhan7reza7)
+<!--![Farhan's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=farhan7reza7)
 
 
 ![Farhan's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=farhan7reza7)
 
 ![Farhan's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=farhan7reza7\&hide_progress=true)
 
-
 ![Farhan's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=farhan7reza7\&layout=compact)
+-->
 
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=farhan7reza7\&layout=donut)](https://github.com/farhan7reza7/github-readme-stats)
@@ -54,11 +57,11 @@
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=farhan7reza7\&hide_progress=true)
 
 
-![Farhan's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=farhan7reza7)
+<!--![Farhan's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=farhan7reza7)
 
 ![Farhan's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=farhan7reza7\&hide_progress=true)
 
 ![Farhan's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=farhan7reza7\&layout=compact)
-
+-->
 
 
