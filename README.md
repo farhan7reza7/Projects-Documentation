@@ -58,11 +58,34 @@
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=farhan7reza7\&hide_progress=true)
 
 
-<!--![Farhan's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=farhan7reza7)
+
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=farhan7reza7)](https://github.com/ryo-ma/github-profile-trophy)
+
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=farhan7reza7&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
+
+![followers](https://github-profile-trophy.vercel.app/?username=farhan7reza7&title=Followers)
+
+![multiple titles](https://github-profile-trophy.vercel.app/?username=farhan7reza7&title=Stars,Followers)
+
+![ranks](https://github-profile-trophy.vercel.app/?username=farhan7reza7&rank=S)
+
+
+![formatted](https://github-profile-trophy.vercel.app/?username=farhan7reza7&column=3)
+
+
+![layout](https://github-profile-trophy.vercel.app/?username=farhan7reza7&column=3&margin-w=15&margin-h=15)
+
+![Farhan's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=farhan7reza7)
 
 ![Farhan's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=farhan7reza7\&hide_progress=true)
 
 ![Farhan's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=farhan7reza7\&layout=compact)
--->
 
+![multiple ranks](https://github-profile-trophy.vercel.app/?username=farhan7reza7&rank=S,AAA)
+
+![no rank](https://github-profile-trophy.vercel.app/?username=farhan7reza7&rank=-C,-B)
+
+![self adjusted](https://github-profile-trophy.vercel.app/?username=farhan7reza7&column=-1)
 
