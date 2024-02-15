@@ -1,3 +1,6 @@
+### Open Source Contributions:
+I actively contribute to open source projects, and believing in the power of collaboration, contribution, and shared knowledge and development.
+
 ### GitHub Stats:
 ![Farhan Reza's GitHub Stats](https://github-readme-stats.vercel.app/api?username=farhan7reza7&show_icons=true&theme=radical)
 
