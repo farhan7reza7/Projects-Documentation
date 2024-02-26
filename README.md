@@ -92,9 +92,8 @@ I actively contribute to open source projects, and believing in the power of col
 
 ![self adjusted](https://github-profile-trophy.vercel.app/?username=farhan7reza7&column=-1)
 
-[Follow me on LinkedIn](www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=farhan7reza7)
-
-Welcome to the documentations for my projects!
+<!--[Follow me on LinkedIn](www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=farhan7reza7)
+-->
 
 <a style='display: flex;
           flex-direction: column;
